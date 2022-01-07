@@ -91,6 +91,7 @@ class ArticleTestCase(MailingTestCase):
         return Article.objects.get(pk=article.pk)
 
     def test_article(self):
+        self.assertTrue(False)  # TEMP to ensure the CI really fails
         self.make_article()
 
     def test_sortorder_defaults(self):
